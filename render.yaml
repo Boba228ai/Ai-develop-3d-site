@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-develop-3d-site
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
